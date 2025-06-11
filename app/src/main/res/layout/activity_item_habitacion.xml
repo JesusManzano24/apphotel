@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/imagenHabitacion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/nombreHabitacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/descripcionHabitacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/precioHabitacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:paddingTop="8dp"/>
+</LinearLayout>

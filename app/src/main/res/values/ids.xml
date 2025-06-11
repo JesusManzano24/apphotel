@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nombreHabitacion" type="id" />
+    <item name="precioHabitacion" type="id" />
+    <item name="descripcionHabitacion" type="id" />
+    <item name="imagenHabitacion" type="id" />
+    <item name="nav_view" type="id" />
+    <item name="nav_host_fragment_activity_footer" type="id" />
+</resources>
