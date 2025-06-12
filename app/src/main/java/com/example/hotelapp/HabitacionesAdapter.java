@@ -1,5 +1,7 @@
 package com.example.hotelapp;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -9,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 
 public class HabitacionesAdapter extends RecyclerView.Adapter<HabitacionesAdapter.ViewHolder> {
@@ -31,7 +35,13 @@ public class HabitacionesAdapter extends RecyclerView.Adapter<HabitacionesAdapte
         holder.nombre.setText(habitacion.getNombre());
         holder.precio.setText(habitacion.getPrecio());
         holder.descripcion.setText(habitacion.getDescripcion());
-        holder.imagen.setImageResource(habitacion.getImagen());
+
+        // Cargar imagen desde URL con Glide
+        Glide.with(holder.itemView.getContext())
+                .load(habitacion.getImagenUrl()) // Usa la URL en lugar de R.drawable
+                .placeholder(new ColorDrawable(Color.GRAY)) // Muestra un fondo gris mientras carga
+                .error(new ColorDrawable(Color.RED)) // Fondo rojo si la imagen no carga
+                .into(holder.imagen);
     }
 
     @Override

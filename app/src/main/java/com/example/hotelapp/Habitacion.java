@@ -15,8 +15,4 @@ public class Habitacion {
     public String getPrecio() { return precio; }
     public String getDescripcion() { return descripcion; }
     public String getImagenUrl() { return imagenUrl; }
-
-    public int getImagen() {
-        return 0;
-    }
 }
